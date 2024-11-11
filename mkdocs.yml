@@ -16,7 +16,7 @@ theme:
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/weather-night 
         name: Switch to dark mode
       primary: teal
       accent: purple 
