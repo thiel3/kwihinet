@@ -1,6 +1,5 @@
 site_name: KwihiDocs
 site_url: https://kwihi.net
-
 theme:
   name: material
   font:
