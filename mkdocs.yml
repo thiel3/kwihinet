@@ -1,5 +1,10 @@
 site_name: KwihiDocs
 site_url: https://kwihi.net
+
+markdown_extensions:
+  - toc:
+      permalink: true
+
 theme:
   name: material
   features:
