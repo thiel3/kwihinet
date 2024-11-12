@@ -1,5 +1,5 @@
-site_name: My Docs
-site_url: https://kwihinet.pages.dev
+site_name: Kwihi Docs
+site_url: https://kwihi.net
 theme:
   name: material
   features:
