@@ -1,36 +1,52 @@
 site_name: KwihiDocs
 site_url: https://kwihi.net
 
-markdown_extensions:
-  - toc:
-      permalink: true
-
 theme:
   name: material
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
   features:
-    - navigation.tabs
-    - navigation.sections
-    - toc.integrate
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    - content.tabs.link
-    - content.code.annotation
-    - content.code.copy
-  language: en
+    - navigation.footer
   palette:
-    - scheme: default
-      toggle:
-        icon: material/weather-night 
-        name: Switch to dark mode
-      primary: teal
-      accent: purple 
-    - scheme: slate 
+    # Dark Mode
+    - scheme: slate
       toggle:
         icon: material/weather-sunny
-        name: Switch to light mode    
-      primary: teal
-      accent: lime
+        name: Dark mode
+      primary: green
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
 
 plugins:
   - social
@@ -44,23 +60,6 @@ extra:
       link: https://x.com/Ed_Thiel
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/edwin-thiel-316764245/
-
-markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - admonition
-  - pymdownx.arithmatex:
-      generic: true
-  - footnotes
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.mark
-  - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 copyright: |
   &copy; 2024 <a href="https://github.com/thiel3"  target="_blank" rel="noopener">Edwin Thiel</a>
